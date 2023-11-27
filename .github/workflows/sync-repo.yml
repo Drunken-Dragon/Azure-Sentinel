@@ -2,8 +2,8 @@ name: "Sync repo"
 
 on:
   schedule:
-    # Runs at 11:00 PM UTC every day
-    - cron: '0 23 * * *'
+    # Runs at 11:00 PM UTC every day from Mon to Fri
+    - cron: '0 23 * * 1-5'
   workflow_dispatch: # on button click
 
 jobs:
